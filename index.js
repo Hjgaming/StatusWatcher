@@ -21,7 +21,7 @@ client.on("ready", async () => {
                 `<:vcodesOperational:891428689844260906> **[${cfg.name}](${cfg.link}) are online.**`
               )
               .setColor("GREEN")
-              .setFooter("status.vcodes.xyz | by clqu");
+              .setFooter("status.arbotix web | by hj");
             channel.send(activeAll);
           }
         } else {
@@ -32,7 +32,7 @@ client.on("ready", async () => {
                 `<:vcodesDowntime:891428689705861131> **[${cfg.name}](${cfg.link}) are down.**`
               )
               .setColor("RED")
-              .setFooter("status.vcodes.xyz | by clqu");
+              .setFooter("status.arbotix web | by hj");
             channel.send(someDown);
           }
         }
@@ -48,13 +48,13 @@ client.on("message", (message) => {
         "<:vcodesOperational:891428689844260906> **All services are online.**"
       )
       .setColor("GREEN")
-      .setFooter("status.vcodes.xyz | by clqu");
+      .setFooter("status.arbotix web | by hj");
     const someDown = new MessageEmbed()
       .setDescription(
         "<:vcodesDowntime:891428689705861131> **Some services are down.**"
       )
       .setColor("RED")
-      .setFooter("status.vcodes.xyz | by clqu");
+      .setFooter("status.arbotix web | by hj");
     let downedServices = [];
     config.checkSites.forEach((cfg) => {
       if (db.has(`down.${cfg.id}`)) {
